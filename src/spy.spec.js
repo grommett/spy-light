@@ -106,23 +106,19 @@ describe('Spy', function() {
       const obj = {
         a: 'a',
         b: 'b',
-        c: { c1: 'c1',
-d: { d1: 'd1',
-e: { val: 'e' } } }
+        c: { c1: 'c1', d: { d1: 'd1', e: { val: 'e' } } }
       };
       testSpy(obj);
       assert.equal(testSpy.calledWith(obj), true);
     });
 
-    it('returns true if argument is any of the previous called argument\'s', function() {
+    it("returns true if argument is any of the previous called argument's", function() {
       const testSpy = spy();
       const arr = [24, 32, 66];
       const obj = {
         a: 'a',
         b: 'b',
-        c: { c1: 'c1',
-d: { d1: 'd1',
-e: { e1: 'e1' } } }
+        c: { c1: 'c1', d: { d1: 'd1', e: { e1: 'e1' } } }
       };
       testSpy(obj);
       testSpy('test');

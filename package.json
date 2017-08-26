@@ -4,7 +4,10 @@
   "description": "A super simple, lightweight spy for testing.",
   "main": "./src/spy.js",
   "scripts": {
-    "test": "NODE_ENV=test npm run lint && mocha --recursive './src/**/*.spec.js'",
+    "test": "NODE_ENV=test mocha --recursive './src/**/*.spec.js'",
+    "test:coverage": "NODE_ENV=test nyc --reporter=lcov --reporter=text --reporter=cobertura --all --exclude coverage --exclude .eslintrc.js  --exclude '**/*.spec.js' npm test -- --reporter dot",
+    "test:nyc": "NODE_ENV=test nyc mocha --recursive './src/**/*.spec.js'",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "lint": "eslint --fix ./src/spy.js"
   },
   "repository": {
@@ -15,7 +18,9 @@
   "author": "David Ford",
   "license": "ISC",
   "devDependencies": {
+    "coveralls": "^2.13.1",
     "eslint": "^4.5.0",
-    "mocha": "^3.5.0"
+    "mocha": "^3.5.0",
+    "nyc": "^11.1.0"
   }
 }
