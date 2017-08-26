@@ -1,5 +1,5 @@
 {
-  "name": "easy-spy",
+  "name": "spy-lite",
   "version": "1.0.0",
   "description": "A super simple, lightweight spy for testing.",
   "main": "./src/spy.js",
@@ -7,8 +7,12 @@
     "test": "NODE_ENV=test npm run lint && mocha --recursive './src/**/*.spec.js'",
     "lint": "eslint --fix ./src/spy.js"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grommett/spy-light.git"
+  },
+  "keywords": ["spy", "test"],
+  "author": "David Ford",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^4.5.0",
