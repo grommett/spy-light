@@ -1,0 +1,17 @@
+{
+  "name": "easy-spy",
+  "version": "1.0.0",
+  "description": "A super simple, lightweight spy for testing.",
+  "main": "./src/spy.js",
+  "scripts": {
+    "test": "NODE_ENV=test npm run lint && mocha --recursive './src/**/*.spec.js'",
+    "lint": "eslint --fix ./src/spy.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.5.0",
+    "mocha": "^3.5.0"
+  }
+}
