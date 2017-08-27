@@ -1,6 +1,6 @@
 # Spy Lite  
 
-[![Build Status](https://travis-ci.org/grommett/spy-light.svg?branch=master&style=flat-square)](https://travis-ci.org/grommett/spy-light)
+[![Build Status](https://travis-ci.org/grommett/spy-light.svg?branch=master&style=flat-square)](https://travis-ci.org/grommett/spy-light) &nbsp;&nbsp;[![Coverage Status](https://coveralls.io/repos/github/grommett/spy-light/badge.svg?branch=master)](https://coveralls.io/github/grommett/spy-light?branch=master)
 
 ## Why?
 I love Sinon, and I know there are a million other spy libraries out there, but I wanted to make my own.  
