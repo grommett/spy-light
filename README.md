@@ -7,7 +7,7 @@ I love Sinon, and I know there are a million other spy libraries out there, but 
 For the fun of it. 
 
 ## Using It
-Spy Light has one method: `calledWith` and three properties: `called`, `callCount`, `args`.
+Spy Lite has one method: `calledWith` and three properties: `called`, `callCount`, `args`.
 
 ### `called`
 The property `called` returns a `boolean`:
