@@ -8,7 +8,7 @@
     "test:coverage": "NODE_ENV=test nyc --reporter=lcov --reporter=text --reporter=cobertura --all --exclude coverage --exclude .eslintrc.js  --exclude '**/*.spec.js' npm test -- --reporter dot",
     "check:coverage": "nyc check-coverage --lines 95 --functions 95 --branches 95",
     "test:nyc": "NODE_ENV=test nyc mocha --recursive './src/**/*.spec.js'",
-    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "coveralls": "npm run test:coverage && cat ./coverage/lcov.info | coveralls",
     "lint": "eslint --fix ./src/spy.js"
   },
   "repository": {
